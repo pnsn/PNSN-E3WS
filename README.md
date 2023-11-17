@@ -1,3 +1,34 @@
+# PNSN-E3WS  
+This repository is a fork of the E3WS repostory published by Pablo Lara (see below)  
+
+The purpose of this repository is to test application of elements of E3WS on data from the Pacific Northwest Seismic Network (PNSN) with particular focus on charactrizing events in the US Pacific Northwest (PNW) and Cascadia Subduction Zone (CSZ) that bound the current magnitude alerting threshold for PNSN operations (M >= 2.95) and fall below the minimum magnitude used for the published version of E3WS.  
+
+This initial fork is being used as a course project for ESS 469/569 at the University of Washington (Fall 2023) and if it shows promise may have continued development beyond the course.
+
+:fork editor: Nathan T. Stevens  
+:fork co-editors: Benz Poobua, Jake Ward  
+:email: ntsteven (at) uw.edu  
+:org: Pacific Northwest Seismic Network  
+
+:license: This forked repository adopts the CC4.0-BY license.   
+:attribution: For referencing the E3WS model architecture and code base, please reference Pablo Lara and co-authors as stated below (Lara et al., 2023). If using PNSN specific adaptations of the E3WS code-base in this repository, please cite Lara et al. (2023) and the URL for this repository.  
+
+## Added Features  
+### environments   
+
+We provide a YAML version of the environment installation instructions provided by Pablo Lara in the main E3WS repository. Install the environment with:  
+ `conda env create -f environments/environment_basic.yml`  
+
+We also provide a version of the basic environment that adds the `apple` channel, which may be necessary for Apple Silicon compliant builds.  
+ `conda env create -f environments/environment_apple.yml`  
+
+Finally, we provide a YAML file that provides additional modules for development, which has all the necessary dependencies for interactive development/plotting:
+ `conda env create -f environments/environment_def.yml`  
+
+___________________________________________________________________________
+
+## Initial README.md at time of fork-ing (17. Nov. 2023)
+
 # E3WS: Earthquake Early Warning Starting From 3 s of Records on a Single Station With Machine Learning
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/pablolarasismo.svg?style=social&label=Follow%20%40pablolarasismo)](https://twitter.com/pablolarasismo)   
