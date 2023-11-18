@@ -74,7 +74,7 @@ query="\copy (  SELECT e.evid,
                      a.arid,
                      a.datetime, a.iphase,
                      a.sta, a.net, a.seedchan, a.location,
-                     a.fm, a.qual,
+                     a.fm, a.qual, a.quality, a.snr,
                      x.delta, x.seaz, x.in_wgt, x.timeres, x.rflag
                 FROM event e, origin o, netmag n, assocaro x, arrival a
                 WHERE e.evid IN ($values)
@@ -83,8 +83,7 @@ query="\copy (  SELECT e.evid,
                     AND x.orid = o.orid
                     AND a.arid = x.arid
                     AND n.magid=e.prefmag
-                    AND a.iphase = 'P'
-                    AND a.quality = 1)
+                    AND a.iphase = 'P')
                 TO 'AQMS_event_mag_phase_query_output.csv' WITH CSV HEADER;"
 # echo "$query"
 

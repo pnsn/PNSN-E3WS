@@ -53,6 +53,8 @@ This shell script was executed on the PNSN `pp2` server, copying data from the `
 |location| Recording location|
 |fm| first motion|
 |qual| Phase onset quality|
+|quality| Pick quality |
+|snr | Signal to Noise Ratio|
 |ASSOCARO Table Attributes |
 |delta| Source-receiver distance|
 |seaz| Back-azimuth (Source to Earthquake AZimuth)|
